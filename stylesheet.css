@@ -110,6 +110,7 @@ div.dropdown:hover div.dropdown-content
 	{
     	float: right;
     	display: block;
+		height: 24px;
   	}
 }
 @media screen and (max-width: 900px)
