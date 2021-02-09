@@ -8,35 +8,49 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="icon" href="images/D2D_Patch_v3.png">
 		<link rel="stylesheet" type="text/css" href="stylesheet.css">
-		<!--<script type="text/javascript" src="script.js"></script>-->
+		<script type="text/javascript" src="script.js"></script>
 		<title>Desk to Defender - Resources</title>
 	</head>
 
 	<body>
-		<img src="images/websiteBanner.png" style="width: 100vw;">
+		<picture>
+			<source media="(max-width: 900px)" srcset="images/mobileBanner.png">
+			<img src="images/websiteBanner.png" style="width: 100%;">
+		</picture>
 		
-		<div class="topnav">
+		<div class="topnav" id="myTopnav">
   			<a class="active" href="index.html">Resources</a>
+			<!--<div class="dropdown">
+				<button class="dropbtn">Suggested Reading</button>
+				<div class="dropdown-content">
+					<a href="category_1.html">Category 1</a>
+					<a href="#category_2">Category 2</a>
+					<a href="#category_3">Category 3</a>
+				</div>
+			</div>-->
 			<a href="about.html">About</a>
 			<a href="contact.html">Contact</a>
 			<!--<a href="#Merch">Merch</a>-->
-			<a href="https://www.patreon.com/desktodefender" style="text-align: right;float: right;">Support Us</a>
+			<a class="right" href="https://www.patreon.com/desktodefender">Support Us</a>
+			<a href="javascript:void(0);" class="icon" onclick="responsiveNav()">&#9776;</a>
 		</div>
 			
-		<div class="card row">
-			<div class="column">
-				<img src="images/D2D_Cover_v1.jpg" style="width:100%;">
-			</div>
-			<div class="column" style="position: relative;">
-				<h1 style="color: #BB0000;">From Desk to Defender</h1>
-				<h3>version 1.0</h3>
-				<h3>1/15/2021</h3><br>
-				<p>
-					Preparing yourself for whatever may come is quite a daunting task when you get right down to it. It is a process of many months of training, and even the most highly trained special operations units in the world take casualties. In the face of logistical breakdowns, food shortages, civil unrest, outright invasion, or natural disasters, there are many things to consider, each one having its own sizable length and breadth. It is the aim of this manual to give the reader some idea as to where to begin, as well as lay the foundations for growth. Using this manual, you will learn how to strengthen your mind and body, develop a survival mindset, maintain and utilize firearms, and work in a rigid team structure in order to survive in complex scenarios. You will learn basic survival techniques, how to strengthen your body without a gym, basic first aid, proper marksmanship practices, and many other useful tools.
-				</p>
+		<div class="card">
+			<div class="row">
+              	<div class="column">
+                  	<img src="images/D2D_Cover_v1.jpg" style="width:100%;">
+              	</div>
+              	<div class="column">
+                  	<h1 style="color: #BB0000;">From Desk to Defender</h1>
+                  	<h3>version 1.0</h3>
+                  	<h3>1/15/2021</h3>
+                  	<p>
+                        Preparing yourself for whatever may come is quite a daunting task when you get right down to it. It is a process of many months of training, and even the most highly trained special operations units in the world take casualties. In the face of logistical breakdowns, food shortages, civil unrest, outright invasion, or natural disasters, there are many things to consider, each one having its own sizable length and breadth. It is the aim of this manual to give the reader some idea as to where to begin, as well as lay the foundations for growth. Using this manual, you will learn how to strengthen your mind and body, develop a survival mindset, maintain and utilize firearms, and work in a rigid team structure in order to survive in complex scenarios. You will learn basic survival techniques, how to strengthen your body without a gym, basic first aid, proper marksmanship practices, and many other useful tools.
+                    </p>
+                </div>
 				<a href="D2D_Manuscript_20210114.pdf" download>
-					<button class="dwnld" style="position: absolute;right: 0px;bottom: 17px;">Download</button>
-				</a>
+                	<button class="dwnld">Download</button>
+                </a>
 			</div>
 		</div>
 		
