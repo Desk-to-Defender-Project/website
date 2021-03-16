@@ -2,5 +2,8 @@
 title: Home
 layout: layout
 ---
-<h1>This is the {{ title | lower }} page.</h1>
-<img src="assets/logo.svg" />
+
+{% include 'home/download.njk'%}
+{% include 'home/support.njk'%}
+{% include 'home/about.njk'%}
+{% include 'home/contact.njk'%}

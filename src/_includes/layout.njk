@@ -17,8 +17,9 @@
   </head>
   <body class="{{ 'debug-screens' if env.devMode }} container">
     {% include 'header.njk' %}
-    <main class="py-8 px-4">
+    <main class="p-2">
       {{ content | safe }}
     </main>
+    {% include 'footer.njk' %}
   </body>
 </html>

@@ -1,3 +1,36 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-item {
+  @apply inline-block text-sm py-2 px-3 ring-red-400 ring-offset-2 hover:bg-red-700 focus:bg-red-700 focus:ring-4 focus:outline-none;
+}
+
+.drop-cap {
+  @apply text-5xl pr-2 font-bold text-red-800 text-shadow-sm float-left;
+}
+
+blockquote {
+  position: relative;
+}
+
+blockquote:before {
+  content: '"';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: -0.5rem;
+  font-size: 7rem;
+  line-height: 4rem;
+  color: rgba(0, 0, 0, 0.1);
+  font-family: cursive;
+}
+
+blockquote > p {
+  text-indent: 1rem;
+  margin-bottom: 0.5rem;
+}
