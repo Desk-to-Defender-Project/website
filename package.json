@@ -4,10 +4,11 @@
   "description": "A starter template for the TEA stack.",
   "main": "index.js",
   "scripts": {
-    "build": "cross-env NODE_ENV=production npm-run-all clean -p build:*",
+    "build": "cross-env NODE_ENV=production npm-run-all clean -p build:* -s renamedir",
     "build:eleventy": "eleventy",
     "build:webpack": "webpack",
-    "clean": "rm -rf dist",
+    "renamedir": "mv dist docs",
+    "clean": "rm -rf dist docs",
     "start": "cross-env NODE_ENV=development npm-run-all clean -p build:* -p start:*",
     "start:eleventy": "eleventy --serve --quiet",
     "start:webpack": "webpack --watch"
