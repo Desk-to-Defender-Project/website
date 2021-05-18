@@ -13,4 +13,4 @@ For the lazy:
 - `yarn build` when you're ready to build a production bundle
 
 **Bonus**
-`yarn build && npx serve dist` will boot up a local server of your production site!
+`yarn build && npx serve docs` will boot up a local server of your production site!

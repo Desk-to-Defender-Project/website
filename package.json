@@ -4,9 +4,10 @@
   "description": "A starter template for the TEA stack.",
   "main": "index.js",
   "scripts": {
-    "build": "cross-env NODE_ENV=production npm-run-all clean -p build:* -s renamedir",
+    "build": "cross-env NODE_ENV=production npm-run-all clean -p build:* -s renamedir cname",
     "build:eleventy": "eleventy",
     "build:webpack": "webpack",
+    "cname": "cp CNAME docs/CNAME",
     "renamedir": "mv dist docs",
     "clean": "rm -rf dist docs",
     "start": "cross-env NODE_ENV=development npm-run-all clean -p build:* -p start:*",
