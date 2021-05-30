@@ -3,10 +3,9 @@
   "description": "Website for the Desk to Defender Project",
   "scripts": {
     "dry-run": "yarn build && npx serve docs",
-    "build": "cross-env NODE_ENV=production npm-run-all clean -p build:* -s cname",
+    "build": "cross-env NODE_ENV=production npm-run-all clean -p build:*",
     "build:eleventy": "eleventy",
     "build:webpack": "webpack",
-    "cname": "cp CNAME docs/CNAME",
     "clean": "rm -rf docs",
     "start": "cross-env NODE_ENV=development npm-run-all clean -p build:* -p start:*",
     "start:eleventy": "eleventy --serve --quiet",
