@@ -1,22 +1,20 @@
 {
-  "name": "tea-stack",
-  "version": "1.0.0",
-  "description": "A starter template for the TEA stack.",
-  "main": "index.js",
+  "name": "desk-to-defender-website",
+  "description": "Website for the Desk to Defender Project",
   "scripts": {
-    "build": "cross-env NODE_ENV=production npm-run-all clean -p build:* -s renamedir cname",
+    "dry-run": "yarn build && npx serve docs",
+    "build": "cross-env NODE_ENV=production npm-run-all clean -p build:* -s cname",
     "build:eleventy": "eleventy",
     "build:webpack": "webpack",
     "cname": "cp CNAME docs/CNAME",
-    "renamedir": "mv dist docs",
-    "clean": "rm -rf dist docs",
+    "clean": "rm -rf docs",
     "start": "cross-env NODE_ENV=development npm-run-all clean -p build:* -p start:*",
     "start:eleventy": "eleventy --serve --quiet",
     "start:webpack": "webpack --watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mattwaler/tea-stack.git"
+    "url": "git@github.com:Desk-to-Defender-Project/website.git"
   },
   "prettier": {
     "semi": false,
@@ -25,17 +23,12 @@
     "trailingComma": "es5",
     "htmlWhitespaceSensitivity": "ignore"
   },
-  "keywords": [
-    "eleventy",
-    "tailwind",
-    "alpine"
-  ],
-  "author": "Matt Waler",
+  "author": "Casey Hunt",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mattwaler/tea-stack/issues"
+    "url": "https://github.com/Desk-to-Defender-Project/website/issues"
   },
-  "homepage": "https://github.com/mattwaler/tea-stack#readme",
+  "homepage": "https://desktodefender.org",
   "dependencies": {
     "alpinejs": "^2.8.2",
     "turbolinks": "^5.2.0"
